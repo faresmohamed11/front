@@ -1,0 +1,39 @@
+#about{
+  
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+      background-attachment: fixed;
+      text-align: center;
+
+  }
+  #about p{
+    text-align: center;
+    background-color: #343a404d;
+    padding: 15px;
+    margin: 90px auto 0 ;
+    color: white;
+    font-weight: bold;
+    font-size: 19px;
+   margin-right: 40px;
+
+  }
+  .btn-ved{
+    margin-top: 30px;
+    padding:10px 20px;
+  }
+  #video-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  video {
+    border: 2px solid #60bf25;
+    border-radius: 8px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+

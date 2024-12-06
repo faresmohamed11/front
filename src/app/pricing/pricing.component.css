@@ -1,0 +1,154 @@
+.pricing {
+
+  position: relative;
+
+
+}
+
+.pricing .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 40px;
+}
+
+.pricing .container .box {
+  background-color: white;
+  position: relative;
+  box-shadow: 0 12px 20px 0 rgb(0 0 0 / 13%), 0 2px 4px 0 rgb(0 0 0 / 12%);
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+  text-align: center;
+  z-index: 1;
+}
+
+.pricing .container .box::before,
+.pricing .container .box::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 50%;
+  background-color: #f6f6f6;
+  z-index: -1;
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+}
+
+.pricing .container .box::before {
+  left: 0;
+  top: 0;
+}
+
+.pricing .container .box::after {
+  bottom: 0;
+  right: 0;
+}
+
+.pricing .container .box:hover::before,
+.pricing .container .box:hover::after {
+  width: 100%;
+}
+
+@media (min-width:1200px) {
+  .pricing .container .popular {
+      top: -20px;
+  }
+
+}
+
+.pricing .container .popular .label {
+  position: absolute;
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: bold;
+  padding: 10px 10px 35px 10px;
+  writing-mode: vertical-rl;
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: vertical-rl;
+  font-size: 18px;
+  right: 20px;
+  width: 40px;
+}
+
+.pricing .container .popular .label::after {
+  position: absolute;
+  content: "";
+  border-color: transparent transparent white transparent;
+  border-width: 20px;
+  border-style: solid;
+  right: 0;
+  bottom: 0;
+}
+
+.pricing .container .box .title {
+  margin: 30px 0;
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: -1px;
+
+}
+
+.pricing .container .box img {
+  width: 80px;
+  margin-bottom: 30px;
+}
+
+.pricing .price {
+  margin-bottom: 20px;
+}
+
+.pricing .price .amount {
+  display: block;
+  font-size: 60px;
+  color: var(--primary-color);
+  font-weight: bold;
+  margin-bottom: 5px;
+
+}
+
+.pricing .price .time {
+  color: #777;
+
+}
+
+.pricing .box ul {
+  text-align: left;
+}
+
+.pricing .box ul li {
+  padding: 20px;
+  border-top: 1px solid #eee;
+}
+
+
+
+.pricing .container .box a {
+  display: block;
+  width: fit-content;
+  margin: 30px auto 40px;
+  border: 2px solid var(--primary-color);
+  padding: 15px 20px;
+  color: var(--primary-color);
+  font-weight: bold;
+  border-radius: 6px;
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+.pricing .container .box a:hover {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: white;
+}

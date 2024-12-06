@@ -1,0 +1,22 @@
+<h2 class="main-title">Meet Our Coaches</h2>
+
+<section *ngFor="let coach of coaches" class="section trainer" id="coaches">
+  <div class="container">
+    <div class="boxs">
+      <div class="box">
+          <span class="name">
+              {{coach.coachName}}
+
+          </span>
+          <img class="img-coach" [src]="coach.coachImage" alt="">
+          <ul>
+              <li><a href="#"><img src="images/facebook-logo.png" alt=""></a></li>
+              <li><a [href]="coach.coachDesc"><img src="images/instagram-logo.png" alt=""></a></li>
+
+          </ul>
+      </div>
+     
+  </div>
+</div>
+
+</section>

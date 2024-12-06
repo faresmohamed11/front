@@ -1,0 +1,17 @@
+<h2 class="main-title">Our Courses</h2>
+<section *ngFor="let course of courses" class="section bg-light" id="courses">
+  <div class="container">
+
+    <div class="boxs">
+      <div class="box">
+       <img [src]="course.courseImage" alt="">
+
+        <div class="content">
+          <h3>{{course.courseName}}</h3>
+          <p>{{course.courseDesc}}</p>
+        </div>
+      </div>
+
+  </div>
+  </div>
+</section>

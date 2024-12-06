@@ -1,0 +1,20 @@
+<h2 class="main-title">About Us</h2>
+<section *ngFor="let about of abouts" [ngStyle]="{ 'background-image': 'url(' + about?.aboutImage + ')' }"  class="section" id="about">
+
+  <div class="container">
+
+      <p> {{about.mainParagraph}}</p>
+
+
+    <div>
+      <button class="btn-primary btn-ved" (click)="createVideo()">watch me!</button>
+    </div>
+
+    <!-- Container where the video will be added dynamically -->
+<div id="video-container"></div>
+
+
+    </div>
+
+
+</section>
